@@ -1,10 +1,14 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['react'],
+  plugins: ['react', '@typescript-eslint'],
   extends: [
-    'plugin:@typescript-eslint/recommended',
     'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
   ],
   parserOptions: {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
@@ -12,6 +16,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    project: './tsconfig.json',
   },
   settings: {
     react: {

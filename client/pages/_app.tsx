@@ -1,7 +1,7 @@
 import React from 'react';
 import NextApp from 'next/app';
-// TODO: why isn't ~ resolving to root?
-import '../styles/main.scss';
+import '~/styles/main.scss';
+import withApollo from '~/lib/hocs/withApollo';
 
 /**
  * Next.js uses the App component to initialize pages. You can override it and
@@ -30,4 +30,4 @@ class App extends NextApp {
   }
 }
 
-export default App;
+export default withApollo(App);

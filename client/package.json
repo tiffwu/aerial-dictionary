@@ -4,8 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix && prettier --write '**/*.{js,jsx,ts,tsx,gql,graphql,css,scss,md,markdown}'"
   },
   "author": "tiffany@twu.io",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^9.1.2",
+    "node-sass": "^4.13.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.5",
+    "@types/react": "^16.9.11",
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.4"
+  }
 }

@@ -1,0 +1,27 @@
+# SERVER
+
+# Ignore bundler config.
+/server/.bundle
+
+# Ignore the default SQLite database.
+/server/db/*.sqlite3
+/server/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/server/log/*
+/server/tmp/*
+/server!/log/.keep
+/server!/tmp/.keep
+
+# Ignore uploaded files in development.
+/server/storage/*
+!/server/storage/.keep
+/server/.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/server/config/master.key
+
+# CLIENT
+
+/client/node_modules
+/client/.next

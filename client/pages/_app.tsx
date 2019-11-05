@@ -1,7 +1,6 @@
 import React from 'react';
 import NextApp from 'next/app';
 import '~/styles/main.scss';
-import withApollo from '~/lib/hocs/withApollo';
 
 /**
  * Next.js uses the App component to initialize pages. You can override it and
@@ -30,4 +29,4 @@ class App extends NextApp {
   }
 }
 
-export default withApollo(App);
+export default App;

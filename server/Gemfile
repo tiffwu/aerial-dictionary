@@ -45,3 +45,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # GraphQL API
 gem 'graphql'
+
+# Authentication
+gem 'jwt'
+gem 'bcrypt' # Allows us to use ActiveModel has_secure_password
